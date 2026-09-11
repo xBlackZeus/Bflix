@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" id="html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BFLIX — Movies, TV, Anime, K-Drama</title>
+<link rel="stylesheet" href="style.css?v=11ce4b5">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">BFLIX</a>
+<nav id="tabs">
+<a href="index.html" class="on" data-i18n="nav.home">Home</a>
+<a href="browse.html" data-i18n="nav.browse">Browse</a>
+<a href="browse.html?cat=movies" data-i18n="nav.movies">Movies</a>
+<a href="browse.html?cat=tv" data-i18n="nav.tv">TV Shows</a>
+<a href="browse.html?cat=anime" data-i18n="nav.anime">Anime</a>
+<a href="browse.html?cat=kdrama" data-i18n="nav.kdrama">K-Drama</a>
+<a href="browse.html?cat=turkey" data-i18n="nav.turkey">Turkish</a>
+<a href="browse.html?cat=arabic" data-i18n="nav.arabic">Arabic • عربي</a>
+</nav>
+<form id="searchForm"><input id="q" data-i18n-ph="search.ph" placeholder="Search titles or tt… id"><button>⌕</button></form>
+<div class="actions">
+<button id="authBtn">Sign in</button>
+<button id="langBtn" title="العربية / English">ع</button>
+<button id="prefsBtn" title="Preferences">⚙</button>
+</div>
+</header>
+<section id="hero"><div class="hero-inner">
+<div class="hero-kicker" data-i18n="hero.kicker">N°1 Featured</div>
+<h1 id="heroTitle">Loading…</h1>
+<p id="heroDesc"></p>
+<div class="hero-btns">
+<button id="heroPlay" data-i18n="hero.play">▶ Play</button>
+<button id="heroInfo" class="ghost" data-i18n="hero.info">ⓘ More Info</button>
+</div>
+</div></section>
+<main class="home-rows">
+<section class="shelf"><h2><span data-i18n="row.movies">Trending Movies</span> <a class="more" href="browse.html?cat=movies" data-i18n="more">More →</a></h2><div class="row-posters" id="rowMovies"></div></section>
+<section class="shelf"><h2><span data-i18n="row.tv">Top Series</span> <a class="more" href="browse.html?cat=tv" data-i18n="more">More →</a></h2><div class="row-posters" id="rowTV"></div></section>
+<section class="shelf"><h2><span data-i18n="row.anime">Top Anime</span> <a class="more" href="browse.html?cat=anime" data-i18n="more">More →</a></h2><div class="row-posters" id="rowAnime"></div></section>
+<section class="shelf"><h2><span data-i18n="row.hist">Continue watching</span></h2><div class="row-posters" id="rowHist"></div></section>
+</main>
+<footer>Built locally • metadata: Cinemeta + Jikan + TVMaze • streams: 9 verified embed servers</footer>
+<dialog id="prefsDlg"><form method="dialog">
+<h3 data-i18n="pref.title">Preferences</h3>
+<label><span data-i18n="pref.server">Default server</span> <select id="pServer"></select></label>
+<label><span data-i18n="pref.sub">Default subtitle</span> <select id="pSub"><option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option><option value="es">Español</option><option value="ko">한국어</option><option value="ja">日本語</option></select></label>
+<label><span data-i18n="pref.theme">Theme</span> <select id="pTheme"><option value="dark" data-i18n="theme.dark">Dark</option><option value="light" data-i18n="theme.light">Light</option></select></label>
+<label><input type="checkbox" id="pAuto" checked> <span data-i18n="pref.auto">Autoplay next episode (TV)</span></label>
+<menu><button value="cancel" data-i18n="btn.close">Close</button><button id="pSave" value="default" data-i18n="btn.save">Save</button></menu>
+</form></dialog>
+<script src="turkey-ids.js?v=11ce4b5"></script>
+<script src="common.js?v=11ce4b5"></script>
+<script src="firebase-config.js?v=11ce4b5"></script>
+<script src="auth.js?v=11ce4b5"></script>
+<script src="home.js?v=11ce4b5"></script>
+</body>
+</html>
