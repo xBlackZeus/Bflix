@@ -1,4 +1,4 @@
-# BFLIX — personal streaming front-end
+# DEEWAN — personal streaming front-end (Deewan)
 
 Movies, TV, anime, cartoons, K-drama + Arabic. Metadata: Cinemeta, Jikan, TVMaze.
 Video: third-party embed servers picked automatically (fastest reachable wins).
