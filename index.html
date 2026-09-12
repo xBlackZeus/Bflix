@@ -1,24 +1,26 @@
 <!doctype html>
 <html lang="en" id="html">
 <head>
-<link rel="icon" type="image/svg+xml" href="logo.svg?v=77248df">
+<link rel="icon" type="image/svg+xml" href="logo.svg?v=e0f5ee2">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DEEWAN — Movies, TV, Anime, K-Drama</title>
-<link rel="stylesheet" href="style.css?v=77248df">
+<link rel="stylesheet" href="style.css?v=e0f5ee2">
 </head>
 <body>
 <header>
-<a class="brand" href="index.html"><img src="logo.svg?v=77248df" alt="DEEWAN logo">DEEWAN</a>
+<a class="brand" href="index.html"><img src="logo.svg?v=e0f5ee2" alt="DEEWAN logo">DEEWAN</a>
 <nav id="tabs">
-<a href="index.html" class="on" data-i18n="nav.home">Home</a>
-<a href="browse.html" data-i18n="nav.browse">Browse</a>
+<a href="index.html" class="on tab" data-i18n="nav.home">Home</a>
+<a href="browse.html" class="tab" data-i18n="nav.browse">Browse</a>
+<a href="browse.html?cat=mylist" class="tab" data-i18n="nav.mylist">My List</a>
+<a href="browse.html?cat=schedule" class="tab" data-i18n="nav.sched">Schedule</a>
 <a href="browse.html?cat=movies" data-i18n="nav.movies">Movies</a>
 <a href="browse.html?cat=tv" data-i18n="nav.tv">TV Shows</a>
 <a href="browse.html?cat=anime" data-i18n="nav.anime">Anime</a>
 <a href="browse.html?cat=kdrama" data-i18n="nav.kdrama">K-Drama</a>
 <a href="browse.html?cat=turkey" data-i18n="nav.turkey">Turkish</a>
-<a href="browse.html?cat=arabic" data-i18n="nav.arabic">Arabic • عربي</a>
+<a href="browse.html?cat=arabic" data-i18n="nav.arabic">Arabic</a>
 </nav>
 <form id="searchForm"><input id="q" data-i18n-ph="search.ph" placeholder="Search titles or tt… id"><button>⌕</button></form>
 <div class="actions">
@@ -51,10 +53,10 @@
 <label><input type="checkbox" id="pAuto" checked> <span data-i18n="pref.auto">Autoplay next episode (TV)</span></label>
 <menu><button value="cancel" data-i18n="btn.close">Close</button><button id="pSave" value="default" data-i18n="btn.save">Save</button></menu>
 </form></dialog>
-<script src="turkey-ids.js?v=77248df"></script>
-<script src="common.js?v=77248df"></script>
-<script src="firebase-config.js?v=77248df"></script>
-<script src="auth.js?v=77248df"></script>
-<script src="home.js?v=77248df"></script>
+<script src="turkey-ids.js?v=e0f5ee2"></script>
+<script src="common.js?v=e0f5ee2"></script>
+<script src="firebase-config.js?v=e0f5ee2"></script>
+<script src="auth.js?v=e0f5ee2"></script>
+<script src="home.js?v=e0f5ee2"></script>
 </body>
 </html>
